@@ -16,3 +16,7 @@ spring:
           uri: http://localhost:8082
           predicates:
             - Path=/authors/**
+        - id: LOGIN
+          uri: http://localhost:8082
+          predicates:
+            - Path=/login/**
