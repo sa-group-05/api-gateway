@@ -28,3 +28,8 @@ spring:
           uri: http://localhost:8082
           predicates:
             - Path=/login/**
+  config:
+    import: "optional:configserver:"
+    cloud:
+      config:
+        uri: http://localhost:8888
